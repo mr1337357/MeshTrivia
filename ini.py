@@ -15,3 +15,6 @@ class ini:
 
     def __getitem__(self,key):
         return self.data[key]
+
+    def __contains__(self,key):
+        return key in self.data
