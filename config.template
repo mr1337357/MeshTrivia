@@ -1,0 +1,36 @@
+##COPY-PASTE THIS FILE TO config.cfg TO USE THIS SOFTWARE
+
+### Device connection options
+[connection]
+##SERIAL:
+#mode=serial
+#port=/dev/ttyUSB0
+
+##TCP:
+#mode=tcp
+#host=192.168.1.2
+
+### Meshtistic settings
+[meshtastic]
+## Set Username -optional
+#user=MeshTrivia
+#usr=TRIV
+#addr=54524956 #not supported by official firmware
+
+## Set Channel
+#chan=1
+#name=Trivia
+
+### Trivia settings
+[trivia]
+
+##uncomment to run a 15 minute net before trivia starts
+#netfirst=15
+
+##uncomment to only allow people who checked into the net
+#netonly=1
+
+##start time
+##formatting is a little funky so I'll give examples
+## wednesdays at 7pm
+#start=* * * 19 * * 2 * *

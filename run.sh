@@ -1,6 +1,7 @@
 FIRSTRUN=0
 if [ ! -d venv ]
 then
+	echo 'venv not found. creating...'
     FIRSTRUN=1
 	python -m venv venv
 fi
@@ -9,7 +10,8 @@ fi
 
 if [[ ${FIRSTRUN} == 1 ]]
 then
-    pip install -r requirements.txt
+	echo 'installing libraries to venv'
+    pip3 install -r requirements.txt
 fi
 
 python server.py $@
